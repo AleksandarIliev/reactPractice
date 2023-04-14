@@ -15,6 +15,19 @@ import { Contact } from './components/Contact/Contact';
 
 function App() {
     const [photo, setPhoto] = useState([]);
+    const [winSize, setWinSize] = useState([window.innerWidth, window.innerHeight]);
+
+    useEffect(() => {
+        const handleWinResize = () => {
+            setWinSize([window.innerWidth, window.innerHeight]);
+        }
+            window.addEventListener('resize', handleWinResize);
+
+            return () => {
+                window.removeEventListener('resize', handleWinResize)
+            
+        }
+    })
 
     useEffect(() => {
         fetch(`http://localhost:3000/album.json`)
@@ -34,7 +47,7 @@ function App() {
 
     return (
         <div className="App">
-            <Nav />
+            <Nav winSize={winSize}/>
             <Routes>
                 <Route patg='*' element={<Err />}></Route>
                 <Route path='/' element={<Home />}></Route>
@@ -46,18 +59,7 @@ function App() {
                 <Route path='/contact' element={<Contact />}></Route>
 
             </Routes>
-            {/* <Nav /> <br /> <br />
-
-            <TrafficLight /> <br /> <br />
-
-            <RotateBand /> <br /> <br />
-
-            <Count start={0} />
-
-            <div>
-                <h2>Photo collection</h2>
-                <PhotoCollection photo={photo} onPhotoSelect={onPhotoSelect} onPhotoDelete={onPhotoDelete} />
-            </div> */}
+            
         </div>
     );
 }
