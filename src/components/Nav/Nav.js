@@ -1,3 +1,4 @@
+import styles from './Nav.module.css'
 import { Link } from "react-router-dom";
 
 export const Nav = ({ winSize }) => {
@@ -11,12 +12,12 @@ export const Nav = ({ winSize }) => {
                 </>
             : 
             <>
-                <Link to="/">Home</Link>
-                <Link to="/products">Products</Link>
-                <Link to="/photoCollection">Photo</Link>
-                <Link to="/rotateBand">Rotate</Link>
-                <Link to="/trafficLight">Traffic</Link>
-                <Link to="/contact">Contact</Link>
+                <Link className={styles.nav} to="/">Home</Link>
+                <Link className={styles.nav} to="/products">Products</Link>
+                <Link className={styles.nav} to="/photoCollection">Photo</Link>
+                <Link className={styles.nav} to="/rotateBand">Rotate</Link>
+                <Link className={styles.nav} to="/trafficLight">Traffic</Link>
+                <Link className={styles.nav} to="/contact">Contact</Link>
                 
             </>
             }
