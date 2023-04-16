@@ -1,12 +1,13 @@
 import { Nav } from "../Nav/Nav";
 import { Link } from "react-router-dom";
+import styles from "./Header.module.css"
 
-export default function Headers() {
+export default function Header({winSize}) {
     return (
-        <>
-            {/* <img src="" alt="Logo" /> */} //add logo
-            <Link to="/">Aleks-M</Link>
-            <Nav />
-        </>
+        <div className={styles.header}>
+            {/* <img src="/Logo.png" alt="Home" /> */}
+            <Link className={styles.fname} to="/">Aleks-M</Link>
+            <Nav winSize={winSize}/>
+        </div>
     );
 }

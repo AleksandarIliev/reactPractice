@@ -1,0 +1,34 @@
+{
+    "album": [
+        {
+            "id": 1,
+            "title": "Sluice gate",
+            "imageUrl": "/Sluice_gate.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Dust_collector",
+            "imageUrl": "/Dust_collector.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Dosing_scale",
+            "imageUrl": "/Dosing_scale.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Rotating_flange",
+            "imageUrl": "/Rotating_flange.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Kitchen_equipment",
+            "imageUrl": "/Kitchen_equipment.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Sluice_gate",
+            "imageUrl": "/Sluice_gate.jpg"
+        }
+    ]
+}

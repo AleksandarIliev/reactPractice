@@ -1,5 +1,8 @@
 .nav {
-    margin: 5px;
+    margin: 3px;
     text-decoration: none;
-    color:  rgb(23, 63, 173);
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
 }

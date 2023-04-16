@@ -11,6 +11,7 @@ import Products from './components/Products/Products';
 import Err from './components/Error/Err';
 import { Nav } from './components/Nav/Nav';
 import { Contact } from './components/Contact/Contact';
+import Header from './components/Header/Header';
 
 
 function App() {
@@ -47,7 +48,7 @@ function App() {
 
     return (
         <div className="App">
-            <Nav winSize={winSize}/>
+            <Header winSize={winSize} />
             <Routes>
                 <Route patg='*' element={<Err />}></Route>
                 <Route path='/' element={<Home />}></Route>
@@ -57,9 +58,7 @@ function App() {
                 <Route path='/photoCollection' element={<PhotoCollection photo={photo} onPhotoDelete={onPhotoDelete} onPhotoSelect={onPhotoSelect}/>}></Route>
                 <Route path='/count' element={<Count start={0} />}></Route>
                 <Route path='/contact' element={<Contact />}></Route>
-
             </Routes>
-            
         </div>
     );
 }

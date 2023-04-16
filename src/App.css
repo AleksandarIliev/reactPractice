@@ -1,9 +1,4 @@
-#dropdown {
-    appearance: none;
-    padding: 5px;
-    background-color: #9b9e9e;
-    color: white;
-    border: none;
-    font-family: fantasy;
-    outline: none;
+body {
+    padding: 0px;
+    margin: 0px;
 }
