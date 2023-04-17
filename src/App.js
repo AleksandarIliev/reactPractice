@@ -9,7 +9,6 @@ import { useEffect, useState } from 'react';
 import { Home } from './components/Home/Home';
 import Products from './components/Products/Products';
 import Err from './components/Error/Err';
-import { Nav } from './components/Nav/Nav';
 import { Contact } from './components/Contact/Contact';
 import Header from './components/Header/Header';
 

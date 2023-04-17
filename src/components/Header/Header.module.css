@@ -1,9 +1,30 @@
 .header {
+    position: relative;
     width: 100%;
-    height: 30px;
+    height: 50px;
     background-color: darkgrey;
 }
+.header img {
+    float: left;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+}
 .fname {
+    float: left;
+    margin: 12px;
+    margin-left: 5px;
+    padding: 3px;
     text-decoration: none;
     color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.fname:hover {
+    background-color: black;
+    color: white;
+}
+.logo:hover {
+    opacity: 50%;
 }

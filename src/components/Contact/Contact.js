@@ -4,6 +4,7 @@ export const Contact = () => {
     return (
         <>
             <form>
+                <br />
                 <label htmlFor="fname">First name:</label><br />
                 <input type="text" id="fname" name="fname" placeholder="Your name" /><br />
                 <label htmlFor="email">Email:</label><br />

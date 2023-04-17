@@ -5,7 +5,7 @@ import styles from "./Header.module.css"
 export default function Header({winSize}) {
     return (
         <div className={styles.header}>
-            {/* <img src="/Logo.png" alt="Home" /> */}
+            <Link className={styles.logo} to="/"><img src="/Logo.png" alt="Home" /></Link>
             <Link className={styles.fname} to="/">Aleks-M</Link>
             <Nav winSize={winSize}/>
         </div>

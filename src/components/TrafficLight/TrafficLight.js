@@ -10,6 +10,7 @@ export const TrafficLight = () =>  {
     
     return (
         <>
+            <br />
             <button onClick={handleClick}>Change to {walk ? 'Stop' : 'Walk'}</button>
             <h5 style={{color: walk ? 'green' : 'red'}}>{walk ? 'Walk': 'Stop'}</h5>
         </>
