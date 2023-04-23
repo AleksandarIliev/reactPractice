@@ -1,6 +1,6 @@
 import { Nav } from "../Nav/Nav";
 import { Link } from "react-router-dom";
-import styles from "./Header.module.css";
+import styles from "./Header.module.css"
 import { UserNav } from "../Nav/UserNav";
 
 export default function Header({ winSize }) {

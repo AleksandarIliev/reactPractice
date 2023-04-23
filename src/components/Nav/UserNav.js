@@ -21,8 +21,8 @@ export const UserNav = () => {
 
                     {isClick ? (
                         <div>
-                            <Link className={styles.userNav} to="/form/login">Login</Link>
-                            <Link className={styles.userNav} to="/form/register">Register</Link>
+                            <Link className={styles.userNav} to="/login">Login</Link>
+                            <Link className={styles.userNav} to="/register">Register</Link>
                             <Link className={styles.userNav} to="/logout">Logout</Link>
                         </div>
                     ) : []}
