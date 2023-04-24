@@ -63,7 +63,6 @@ function App() {
                 <Route path='/form/login' element={<Login />}></Route>
             </Routes>
         </div>
-        //2'34''
     );
 }
 
